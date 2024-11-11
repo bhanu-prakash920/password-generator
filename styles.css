@@ -1,0 +1,92 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container for the Password Generator, Login, and Registration pages */
+.container, .login-container, .register-container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for labels and input fields */
+label, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Input field styles */
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the generated password section */
+.result {
+    text-align: center;
+}
+
+/* Error message styles */
+#error-message {
+    color: red;
+    display: none;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Additional styles for links like "Logout" */
+#logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#logout-btn:hover {
+    background-color: #218838;
+}
+
+/* Style for password strength meter (if added) */
+#strength-meter {
+    height: 10px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, User!</h1>
+        <p>You've successfully logged in. Enjoy your time on our password generator page!</p>
+        <a href="index.html">Go to Password Generator</a>
+        <a href="login.html" id="logout-btn">Logout</a>
+    </div>
+    <script>
+        // If not logged in, redirect to login page
+        if (localStorage.getItem('loggedIn') !== 'true') {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
